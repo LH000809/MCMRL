@@ -1,0 +1,14 @@
+conda create -n mcmrl python=3.7
+conda activate mcmrl
+
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch-geometric==1.6.3 torch-sparse==0.6.9 torch-scatter==2.0.6  -f https://pytorch-geometric.com/whl/torch-1.7.1+cu110.html
+pip install PyYAML
+conda install -c conda-forge rdkit=2020.09.1.0
+conda install -c conda-forge tensorboard
+
+conda install --use-local /home/luohong/MCMRL/cudatoolkit-11.0.221-h6bb024c_0.conda
+conda install --use-local /home/luohong/MCMRL/cudnn-8.2.1.32-h86fa8c9_0.tar.bz2
+
+# download torch_cluster-1.5.9-cp37-cp37m-win_amd64.whl
+python -m pip install torch_cluster-1.5.9-cp37-cp37m-win_amd64.whl
